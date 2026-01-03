@@ -79,15 +79,20 @@ MLflow Model Registry
 Dedicated inference cluster
 
 🧠 AI Engine — 8-Model Pipeline
-Model	Architecture	Responsibility
-Cost Forecaster	Bi-Directional LSTM	30–90 day cost prediction
-Anomaly Detector	Deep Autoencoder	Behavioral & cost anomaly detection
-Policy Optimizer	Q-Learning (RL)	Scaling & termination policies
-Intent Classifier	Fine-Tuned BERT	Natural language → infra intent
-Entity Extractor	BiLSTM + CRF	Provider, region, resource parsing
-Seasonality Engine	Facebook Prophet	Weekly/monthly trends
-Zombie Hunter	Random Forest	Idle resource classification
-Design Analyzer	ResNet-50 (CNN)	Infra diagram pattern analysis
+
+| Model              | Architecture        | Responsibility                      |
+| ------------------ | ------------------- | ----------------------------------- |
+| Cost Forecaster    | Bi-Directional LSTM | 30–90 day cost prediction           |
+| Anomaly Detector   | Deep Autoencoder    | Behavioral & cost anomaly detection |
+| Policy Optimizer   | Q-Learning (RL)     | Scaling & termination policies      |
+| Intent Classifier  | Fine-Tuned BERT     | Natural language → infra intent     |
+| Entity Extractor   | BiLSTM + CRF        | Provider, region, resource parsing  |
+| Seasonality Engine | Facebook Prophet    | Weekly/monthly trends               |
+| Zombie Hunter      | Random Forest       | Idle resource classification        |
+| Design Analyzer    | ResNet-50 (CNN)     | Infra diagram pattern analysis      |
+
+
+
 📊 Data Modalities & Integration
 
 All data is normalized into a unified internal schema.
